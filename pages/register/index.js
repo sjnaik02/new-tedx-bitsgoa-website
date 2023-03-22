@@ -12,27 +12,11 @@ export default function index() {
           >
             Get your pass!
           </h1>
-          <p className="font-body mt-4 text-2xl ">
-            Fill out the form below to purchase your pass.
+          <p className="mt-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptas, quod, quia, voluptates quae voluptatem quibusdam
+            necessitatibus quas quidem voluptatum quos. Quisquam, quae. Quisquam
           </p>
-          <form method="POST" action="/register">
-            <label for="email" hidden>
-              Email
-            </label>
-            <input
-              name="email"
-              type="email"
-              className="font-body placeholder:font-body mt-4 inline-block h-12 w-full rounded-lg border-2 border-white bg-black p-4 focus:border-red-600 focus:outline-none "
-              placeholder="Enter your email address"
-            />
-            <button
-              type="submit"
-              className="mt-4 inline-block rounded-lg border border-white py-2 px-16 text-xl uppercase transition duration-300 ease-in-out
-					 hover:bg-white hover:text-black focus:bg-white focus:text-black focus:outline-none"
-            >
-              Submit
-            </button>
-          </form>
         </div>
       </div>
       <div className="absolute top-0 h-1/3 w-full bg-gradient-to-br from-red-900 via-black to-red-600 sm:static sm:h-full sm:w-1/2" />

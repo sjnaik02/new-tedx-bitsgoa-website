@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ["var(--font-oswald)", "sans-serif"],
+        body: ["var(--font-manrope)", "sans-serif"],
+      },
+    },
     plugins: [],
   },
 };
