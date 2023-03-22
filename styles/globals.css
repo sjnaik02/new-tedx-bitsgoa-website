@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .bg-cool-x {
+    background-image: url("/assets/cool_x.png");
+  }
+}
