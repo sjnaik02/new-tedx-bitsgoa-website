@@ -3,15 +3,13 @@ import { useState } from "react";
 export default function index() {
   const [email, setEmail] = useState("");
   return (
-    <div className="font-body flex h-[100svh] w-full bg-black text-white md:flex-row">
+    <div className="flex h-[100svh] w-full bg-black font-body text-white md:flex-row">
       <div className="flex h-full w-full flex-col justify-center lg:w-1/2">
         <div className="px-12">
-          <h1
-            className="font-heading relative z-10 text-6xl font-semibold
-				before:absolute before:left-0 before:top-8 before:-z-10 before:h-6 before:w-80 before:bg-red-800 before:opacity-100 before:content-['']"
-          >
-            Get your pass!
+          <h1 className="relative z-10 pb-2 font-heading text-5xl font-bold uppercase tracking-wide md:text-6xl">
+            Get your <span class="text-red-600">pass!</span>
           </h1>
+          <hr></hr>
           <p className="mt-4 text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptas, quod, quia, voluptates quae voluptatem quibusdam

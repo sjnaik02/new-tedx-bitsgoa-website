@@ -3,7 +3,7 @@ import { Oswald, Manrope } from "next/font/google";
 
 const oswald = Oswald({
   subsets: ["latin"],
-  variants: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-oswald",
 });
 

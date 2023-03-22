@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className=" relative h-screen w-full border border-transparent text-white ">
       <div className="max-w-3xl lg:pt-36 lg:pl-12">
-        <p className="mt-12 font-heading text-5xl font-bold uppercase  tracking-tighter md:text-6xl">
+        <p className="mt-12 font-heading text-5xl font-semibold uppercase  tracking-tighter md:text-6xl">
           India's <span className="text-red-600">oldest</span> institutional
           <span className="text-red-600"> TEDx</span> Conference
         </p>
