@@ -3,6 +3,26 @@ import { useState } from "react";
 export default function index() {
   const [name, setName] = useState("");
   const [id, setId] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbyXBVbSKoRQ6FdKILcMsO3_DJwa6X55SYSNVtjJd54rbcKvruPp0PbRVA3rIkWcL-Id1A/exec";
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await fetch(scriptUrl, {
+      method: "POST",
+      body: new FormData(e.target),
+    });
+    const data = await res.json();
+    console.log(data);
+    if (data.result === "success") {
+      setSuccess(true);
+    } else {
+      setError(true);
+    }
+    setName("");
+    setId("");
+  };
   return (
     <div className="flex h-[100svh] w-full bg-black font-body text-white md:flex-row">
       <div className="flex h-full w-full flex-col justify-center lg:w-1/2">
@@ -23,14 +43,21 @@ export default function index() {
             <span className="text-red-600">|</span> This is valid only for
             students of BITS Goa.
           </p>
-          {/* form for Name, Id, and a checkbox giving consent to deduct from SWD */}
-          <form className="mt-4 flex flex-col rounded-lg border border-gray-700 p-4">
-            <label htmlFor="name" className="text-lg" hidden>
+          {success === true && (
+            <p className="text-lg text-white">Sucessfully Registered!</p>
+          )}
+          <form
+            className="mt-4 flex flex-col rounded-lg border border-gray-700 p-4"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbyXBVbSKoRQ6FdKILcMsO3_DJwa6X55SYSNVtjJd54rbcKvruPp0PbRVA3rIkWcL-Id1A/exec"
+            onSubmit={handleSubmit}
+          >
+            <label htmlFor="Name" className="text-lg" hidden>
               Name:
             </label>
             <input
               type="text"
-              name="name"
+              name="Name"
               id="name"
               className="mt-2 rounded-md border border-gray-700 bg-black px-4 py-2 text-lg focus:border-red-600 focus:outline-none"
               value={name}
@@ -38,12 +65,12 @@ export default function index() {
               placeholder="Name"
               required
             />
-            <label htmlFor="id" className="text-lg" hidden>
+            <label htmlFor="BITS ID" className="text-lg" hidden>
               BITS ID:
             </label>
             <input
               type="text"
-              name="id"
+              name="BITS ID"
               id="id"
               className="mt-2 rounded-md border border-gray-700 bg-black px-4 py-2 text-lg focus:border-red-600 focus:outline-none"
               value={id}
@@ -54,12 +81,12 @@ export default function index() {
             <div className="mt-4 flex">
               <input
                 type="checkbox"
-                name="swd"
-                id="swd"
+                name="SWD"
+                id="SWD"
                 className="mt-2 checked:accent-red-600"
                 required
               />
-              <label htmlFor="swd" className="ml-4 text-base">
+              <label htmlFor="SWD" className="ml-4 text-base">
                 I give my consent to deduct Rs. 650/- from my SWD account to
                 TEDxBITSGoa to register for TEDxBITSGoa 2023.
               </label>
