@@ -2,7 +2,6 @@ import SpeakerCard from "./SpeakerCard";
 import { speakers } from "../lib/speakers";
 
 export default function Speakers() {
-  console.log(speakers);
   return (
     <div className="flex min-h-screen w-screen flex-col p-4 font-body text-white md:flex-row lg:px-12">
       <div className="top-0 flex flex-col justify-center py-10  pr-8 md:sticky md:h-screen md:w-1/3 md:pb-40">
