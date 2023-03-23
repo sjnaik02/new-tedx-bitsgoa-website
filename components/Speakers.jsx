@@ -1,8 +1,8 @@
 import SpeakerCard from "./SpeakerCard";
-import Speaker1 from "../public/speakers/Speaker1.jpg";
-import Speaker2 from "../public/speakers/Speaker2.jpg";
+import { speakers } from "../lib/speakers";
 
 export default function Speakers() {
+  console.log(speakers);
   return (
     <div className="flex min-h-screen w-screen flex-col p-4 font-body text-white md:flex-row lg:px-12">
       <div className="top-0 flex flex-col justify-center py-10  pr-8 md:sticky md:h-screen md:w-1/3 md:pb-40">
@@ -19,16 +19,13 @@ export default function Speakers() {
       </div>
       <div className="flex-1 md:ml-4">
         <div className="grid grid-cols-2 gap-4  lg:grid-cols-3">
-          <SpeakerCard name="Speaker 1" image={Speaker1.src} />
-          <SpeakerCard name="Speaker 2" image={Speaker2.src} />
-          <SpeakerCard name="Speaker 1" image={Speaker1.src} />
-          <SpeakerCard name="Speaker 2" image={Speaker2.src} />
-          <SpeakerCard name="Speaker 1" image={Speaker1.src} />
-          <SpeakerCard name="Speaker 2" image={Speaker2.src} />
-          <SpeakerCard name="Speaker 1" image={Speaker1.src} />
-          <SpeakerCard name="Speaker 2" image={Speaker2.src} />
-          <SpeakerCard name="Speaker 1" image={Speaker1.src} />
-          <SpeakerCard name="Speaker 2" image={Speaker2.src} />
+          {speakers.map((speaker) => (
+            <SpeakerCard
+              key={speaker.name}
+              name={speaker.name}
+              image={speaker.imageUrl}
+            />
+          ))}
         </div>
       </div>
     </div>
