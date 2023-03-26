@@ -17,12 +17,12 @@ export default function About() {
           challenge perspectives, and create a better world for ourselves and
           future generations. Let's make a difference together.
         </p>
-        <a
+        {/* <a
           className="mt-12 inline-block font-body text-lg font-light underline underline-offset-4 transition-colors  hover:text-red-600"
           href="/"
         >
           Learn More about TED and TEDx →
-        </a>
+        </a> */}
       </div>
     </section>
   );
