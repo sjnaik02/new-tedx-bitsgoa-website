@@ -9,7 +9,7 @@ export default function Sponsors() {
       >
         Our <span className="text-red-600">Sponsors</span>
       </h2>
-      <p className="relative z-10 mx-auto mt-4 max-w-4xl px-12 text-lg font-semibold md:text-xl">
+      <p className="relative z-10 mx-auto mt-4 max-w-4xl px-12 text-lg font-medium md:text-xl">
         We are grateful to our sponsors for their generous support. If you are
         interested in sponsoring us, please contact us at{" "}
         <a
