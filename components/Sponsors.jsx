@@ -13,11 +13,11 @@ export default function Sponsors() {
         We are grateful to our sponsors for their generous support. If you are
         interested in sponsoring us, please contact us at{" "}
         <a
-          href="mailto:sjnaik02@gmail.com
+          href="mailto:tedxbitsgoa2023@gmail.com
           "
           className="text-red-600"
         >
-          sjnaik02@gmail.com
+          tedxbitsgoa2023@gmail.com
         </a>
       </p>
       <div className="mx-auto mt-12 grid w-full max-w-4xl  grid-cols-1 place-items-center  gap-4 px-4 sm:grid-cols-2 md:grid-cols-2 lg:px-12">
