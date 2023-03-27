@@ -17,7 +17,7 @@ export default function Speakers() {
         </p>
       </div>
       <div className="flex-1 md:ml-4">
-        <div className="grid grid-cols-2 gap-4  lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
           {speakers.map((speaker) => (
             <SpeakerCard
               key={speaker.name}
