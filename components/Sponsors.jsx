@@ -1,8 +1,16 @@
 import { sponsors } from "@/lib/sponsors";
 import SponsorCard from "./SponsorCard";
+import { motion } from "framer-motion";
+
 export default function Sponsors() {
   return (
-    <section className="min-h-fit w-full bg-black pb-12 text-center font-body text-white">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="min-h-fit w-full bg-black pb-12 text-center font-body text-white"
+      viewport={{ threhshold: 0.8, once: true }}
+    >
       <h2
         className="relative z-10 mt-12 inline-block font-heading text-5xl font-semibold uppercase md:text-6xl
   "
@@ -31,6 +39,6 @@ export default function Sponsors() {
           />
         ))}
       </div>
-    </section>
+    </motion.div>
   );
 }
