@@ -27,14 +27,14 @@ export default function index() {
     setLoading(false);
   };
   return (
-    <div className="flex min-h-screen w-full bg-black font-body text-white md:flex-row">
+    <div className="flex h-screen min-h-[100svh]  w-full bg-black font-body text-white md:flex-row">
       <div className="flex h-full w-full flex-col justify-center lg:w-1/2">
-        <div className="h-fit px-12">
-          <h1 className="relative z-10 pb-2 font-heading text-5xl font-bold uppercase tracking-wide md:text-6xl">
+        <div className="flex h-fit min-h-screen max-w-3xl flex-col justify-center px-4 sm:px-12">
+          <h1 className="relative z-10 pb-2 font-heading text-4xl font-bold uppercase tracking-wide md:text-6xl">
             Get your <span className="text-red-600">pass!</span>
           </h1>
           <hr></hr>
-          <p className=" relative z-10 mb-2 mt-4  text-lg">
+          <p className=" relative z-10 mb-2 mt-4 text-sm sm:text-base">
             TEDxBITSGoa has brought some of the best speakers from all over the
             country to Goa. Passes are limited, so register now to reserve your
             seat at this once-in-a-year opportunity.
@@ -90,7 +90,7 @@ export default function index() {
                   className="mt-2 checked:accent-red-600"
                   required
                 />
-                <label htmlFor="SWD" className="ml-4 text-base">
+                <label htmlFor="SWD" className="ml-4 text-sm">
                   I give my consent to deduct Rs. 650/- from my SWD account to
                   TEDxBITSGoa to register for TEDxBITSGoa 2023.
                 </label>
