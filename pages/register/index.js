@@ -27,9 +27,9 @@ export default function index() {
     setLoading(false);
   };
   return (
-    <div className="flex h-[100svh] w-full bg-black font-body text-white md:flex-row">
+    <div className="flex min-h-screen w-full bg-black font-body text-white md:flex-row">
       <div className="flex h-full w-full flex-col justify-center lg:w-1/2">
-        <div className="px-12">
+        <div className="h-fit px-12">
           <h1 className="relative z-10 pb-2 font-heading text-5xl font-bold uppercase tracking-wide md:text-6xl">
             Get your <span className="text-red-600">pass!</span>
           </h1>
