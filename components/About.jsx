@@ -9,7 +9,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ amount: 1, once: true }}
-          className="mt-12 font-heading text-5xl font-semibold uppercase tracking-tighter  md:text-6xl"
+          className="mt-12 font-heading text-4xl font-semibold  uppercase tracking-tighter sm:text-5xl  md:text-6xl"
         >
           India's <span className="text-red-600">oldest</span> institutional
           <span className="text-red-600"> TEDx</span> Conference

@@ -13,8 +13,10 @@ export default function SponsorCard({ imageUrl, name, title, large }) {
         src={imageUrl}
         alt={name}
         className={`${
-          title === "Past Sponsor" ? "h-36" : "h-48"
-        } w-auto object-contain  transition-all `}
+          title === "Past Sponsor" || title === "Food Sponsor" ? "h-36" : "h-48"
+        } 
+        ${large ? "h-56" : ""}
+        w-auto object-contain  transition-all `}
       />
       <div className="hidden">
         <h3 className="font-heading text-2xl ">{title}</h3>
