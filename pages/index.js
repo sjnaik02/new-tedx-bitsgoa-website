@@ -20,7 +20,10 @@ export default function Home() {
         <meta property="og:title" content="TEDxBITSGoa" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tedxbitsgoa.com/" />
-        <meta property="og:image" content="/OG-IMG.png" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/sjnaik02/new-tedx-bitsgoa-website/main/public/OG-IMG.png?raw=true"
+        />
         <meta
           property="og:description"
           content="India's Oldest Institutional TEDx Organisation"
@@ -36,7 +39,10 @@ export default function Home() {
           name="twitter:description"
           content="India's Oldest Institutional TEDx Organisation"
         />
-        <meta name="twitter:image" content="/OG-IMG.png" />
+        <meta
+          name="twitter:image"
+          content="https://raw.githubusercontent.com/sjnaik02/new-tedx-bitsgoa-website/main/public/OG-IMG.png?raw=true"
+        />
       </Head>
       <Hero />
       <Speakers />
