@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className=" font-heading  text-7xl font-bold  sm:text-8xl lg:text-9xl"
+          className=" font-heading  text-6xl font-bold  sm:text-8xl lg:text-9xl"
         >
           <span className="text-red-600">TEDx</span>BITSGoa
         </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="my-4 font-body text-2xl font-medium uppercase "
+          className="my-4 font-body text-xl font-medium uppercase "
         >
           Ideas worth spreading
         </motion.p>
@@ -38,8 +38,8 @@ export default function Hero() {
           transition={{ duration: 1.5 }}
         >
           <Link
-            className=" inline-block w-fit rounded-lg border border-white px-16 py-3 font-body text-xl font-medium uppercase tracking-wide transition duration-200 ease-in-out
-                 hover:bg-white hover:text-black focus:bg-white focus:text-black focus:outline-none"
+            className=" inline-block w-fit rounded-lg border border-white px-12 py-2 font-body text-xl font-medium uppercase tracking-wide transition duration-200 ease-in-out hover:bg-white hover:text-black
+                 focus:bg-white focus:text-black focus:outline-none md:px-16 md:py-3"
             href="/register"
           >
             Get Your Pass!
