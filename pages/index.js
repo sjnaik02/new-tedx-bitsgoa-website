@@ -14,7 +14,10 @@ export default function Home() {
           content="India's Oldest Institutional TEDx Organisation"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/cool_x.png" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+
         <link rel="mask-icon" href="/assets/cool_x.png" color="#000000" />
         {/* add meta tags */}
         <meta property="og:title" content="TEDxBITSGoa" />
