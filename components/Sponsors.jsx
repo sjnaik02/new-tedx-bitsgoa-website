@@ -8,7 +8,7 @@ export default function Sponsors() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-fit w-full bg-black pb-12 text-center font-body text-white"
+      className="min-h-[75vh] w-full bg-black pb-12 text-center font-body text-white"
       viewport={{ threhshold: 0.8, once: true }}
     >
       <h2
@@ -28,7 +28,7 @@ export default function Sponsors() {
           tedxbitsgoa2023@gmail.com
         </a>
       </p>
-      <div className="mx-auto mt-12 grid w-full max-w-4xl  grid-cols-1 place-items-center  gap-4 px-4 sm:grid-cols-2 md:grid-cols-2 lg:px-12">
+      <div className="mx-auto mt-12 grid w-full max-w-6xl  grid-cols-1 place-items-center  gap-4 px-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4  lg:px-12">
         {sponsors.map((sponsor) => (
           <SponsorCard
             key={sponsor.name}

@@ -8,7 +8,7 @@ export default function SpeakerCard({ name, image, index }) {
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: index * 0.1 }}
-      viewport={{ threhshold: 0.5, once: true }}
+      viewport={{ threhshold: 0.4, once: true }}
     >
       <Image
         fill

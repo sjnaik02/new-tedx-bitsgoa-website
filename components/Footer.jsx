@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="font-bod flex h-48 w-full flex-col items-center justify-center text-center	text-lg text-white md:text-xl ">
+    <footer className="font-bod flex h-36 w-full flex-col items-center justify-center text-center	text-lg text-white md:text-xl ">
       <p className="font-heading">
         This event is operated under a licence from TED
       </p>
