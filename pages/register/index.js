@@ -2,7 +2,8 @@ import { useState } from "react";
 
 export default function index() {
   const [name, setName] = useState("");
-  const [id, setId] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -23,7 +24,8 @@ export default function index() {
       setError(true);
     }
     setName("");
-    setId("");
+    setEmail("");
+    setPhone("");
     setLoading(false);
   };
   return (
@@ -39,13 +41,7 @@ export default function index() {
             country to Goa. Passes are limited, so register now to reserve your
             seat at this once-in-a-year opportunity.
           </p>
-          <p className="text-lg font-bold text-red-600">
-            Price: Rs. 650 /- (deducted from SWD)
-          </p>
-          <p className="text-base text-gray-300">
-            <span className="text-red-600">|</span> This is valid only for
-            students of BITS Goa.
-          </p>
+          <p className="text-lg font-bold text-red-600">Price: Rs. 600/-</p>
           {success === true && (
             <p className="text-lg text-white">Sucessfully Registered!</p>
           )}
@@ -69,32 +65,33 @@ export default function index() {
                 placeholder="Name"
                 required
               />
-              <label htmlFor="BITS ID" className="text-lg" hidden>
-                BITS ID:
+              <label htmlFor="Email" className="text-lg" hidden>
+                Email:
+              </label>
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                className="mt-2 rounded-md border border-gray-700 bg-black px-4 py-2 text-lg focus:border-red-600 focus:outline-none"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+                required
+              />
+              <label htmlFor="Phone" className="text-lg" hidden>
+                Phone:
               </label>
               <input
                 type="text"
-                name="BITS ID"
-                id="id"
+                name="Phone"
+                id="Phone"
                 className="mt-2 rounded-md border border-gray-700 bg-black px-4 py-2 text-lg focus:border-red-600 focus:outline-none"
-                value={id}
-                onChange={(e) => setId(e.target.value)}
-                placeholder="BITS ID"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Enter your phone number"
                 required
               />
-              <div className="mt-4 flex">
-                <input
-                  type="checkbox"
-                  name="SWD"
-                  id="SWD"
-                  className="mt-2 checked:accent-red-600"
-                  required
-                />
-                <label htmlFor="SWD" className="ml-4 text-sm">
-                  I give my consent to deduct Rs. 650/- from my SWD account to
-                  TEDxBITSGoa to register for TEDxBITSGoa 2023.
-                </label>
-              </div>
+
               <button
                 type="submit"
                 className="mt-4 rounded-md bg-red-600 px-4 py-2 text-lg font-bold uppercase text-white hover:bg-red-700 focus:bg-red-700 focus:outline-none"
