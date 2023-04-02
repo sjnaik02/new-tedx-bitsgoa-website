@@ -16,7 +16,7 @@ export default function SpeakerCard({ name, image, index }) {
         alt={name}
         className="object-cover transition-opacity group-hover:opacity-50"
       />
-      <p className="absolute bottom-4 left-4 flex h-fit w-fit items-center justify-center bg-red-600 px-2 font-body text-lg font-bold text-white opacity-0  transition-opacity group-hover:opacity-100">
+      <p className="text-md absolute bottom-4 left-4 flex h-fit w-fit items-center justify-center bg-red-600 px-2 text-base font-bold text-white opacity-0 transition-opacity  group-hover:opacity-100 md:text-lg">
         {name}
       </p>
     </motion.div>
