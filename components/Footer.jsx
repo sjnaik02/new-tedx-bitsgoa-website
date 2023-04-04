@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="min-h-36 flex w-full flex-col items-center justify-center	py-4 text-center font-body text-lg text-white md:text-xl ">
-      <div className="flex w-4/5 justify-between">
-        <div className="mb-4 text-left">
+      <div className="flex w-full flex-col px-4 md:w-4/5 md:flex-row md:justify-between">
+        <div className="mb-4 md:text-left">
           <p className="font-heading text-xl md:text-2xl">Contact Us:</p>
           <a
             href="mailto:tedxbitsgoa2023@gmail.com"
