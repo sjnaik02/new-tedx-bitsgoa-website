@@ -42,6 +42,15 @@ export default function index() {
             seat at this once-in-a-year opportunity.
           </p>
           <p className="text-lg font-bold text-red-600">Price: Rs. 600/-</p>
+          <p className="relative z-10 my-2 text-sm hover:text-red-600 sm:text-base">
+            <a
+              className="underline underline-offset-2"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdApGUhkpx3grReQ-dxXJljajss_VNwbWxqEm7nIBo6hwINIA/viewform?usp=sf_link"
+              target="_blank"
+            >
+              BITSian? Click Here to register and get a discount!
+            </a>
+          </p>
           {success === true && (
             <p className="text-lg text-white">Sucessfully Registered!</p>
           )}
