@@ -38,6 +38,7 @@ export default function Sponsors() {
             name={sponsor.name}
             title={sponsor.title}
             large={sponsor.large}
+            url={sponsor.url}
           />
         ))}
       </div>
@@ -53,6 +54,7 @@ export default function Sponsors() {
             name={sponsor.name}
             title={sponsor.title}
             large={sponsor.large}
+            url={sponsor.url}
           />
         ))}
       </div>
@@ -68,6 +70,7 @@ export default function Sponsors() {
             name={sponsor.name}
             title={sponsor.title}
             large={sponsor.large}
+            url={sponsor.url}
           />
         ))}
       </div>
