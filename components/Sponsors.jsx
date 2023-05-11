@@ -3,6 +3,7 @@ import { pastSponsors } from "@/lib/pastSponsors";
 import { foodSponsors } from "@/lib/foodSponsors";
 import SponsorCard from "./SponsorCard";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Sponsors() {
   return (
@@ -10,9 +11,13 @@ export default function Sponsors() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-[75vh] w-full bg-black pb-12 text-center font-body text-white"
+      className="min-h-[100vh] w-full bg-black pt-12 text-center font-body text-white"
       viewport={{ threhshold: 0.8, once: true }}
     >
+      <Link href={"/"}>
+        <img src="/assets/logo-white.png" width={160} className="mx-auto" />
+      </Link>
+
       <h2
         className="relative z-10 mt-12 inline-block font-heading text-5xl font-semibold uppercase md:text-6xl
   "

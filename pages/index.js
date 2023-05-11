@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import Speakers from "@/components/Speakers";
-import Sponsors from "@/components/Sponsors";
+import SponsorsHome from "@/components/SponsorsHome";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -49,7 +49,8 @@ export default function Home() {
       </Head>
       <Hero />
       <Speakers />
-      <Sponsors />
+      {/* add a link to sponsor section */}
+      <SponsorsHome />
       <Footer />
     </>
   );
