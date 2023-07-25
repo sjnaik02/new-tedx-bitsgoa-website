@@ -85,7 +85,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/tedxbitsgoa/"
+            href="https://www.linkedin.com/company/tedx-bitsgoa/?originalSubdomain=in"
             target="_blank"
             className=" inline-block px-1 text-red-600"
           >
