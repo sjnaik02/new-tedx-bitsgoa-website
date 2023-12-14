@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
-import Speakers from "@/components/Speakers";
-import SponsorsHome from "@/components/SponsorsHome";
-import Footer from "@/components/Footer";
+import NewHome from "@/components/NewHome";
 
 export default function Home() {
   return (
@@ -47,11 +44,7 @@ export default function Home() {
           content="https://raw.githubusercontent.com/sjnaik02/new-tedx-bitsgoa-website/main/public/OG-IMG.png?raw=true"
         />
       </Head>
-      <Hero />
-      <Speakers />
-      {/* add a link to sponsor section */}
-      <SponsorsHome />
-      <Footer />
+      <NewHome />
     </>
   );
 }
