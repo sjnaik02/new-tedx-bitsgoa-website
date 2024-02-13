@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { Oswald, Manrope } from "next/font/google";
 
 const oswald = Oswald({
@@ -15,8 +16,11 @@ const manrope = Manrope({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${oswald.variable} font-sans ${manrope.variable}`}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <main className={`${oswald.variable} font-sans ${manrope.variable}`}>
+        <Component {...pageProps} />
+      </main>
+      <Analytics />
+    </>
   );
 }
